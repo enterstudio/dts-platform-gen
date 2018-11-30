@@ -1,5 +1,5 @@
-import React from "react";
-import { BorderProps, SizeProps, SpaceProps } from "styled-system";
+import React from "react"
+import { BorderProps, SizeProps, SpaceProps } from "styled-system"
 export interface CheckboxProps {
     /** Disable checkbox interactions */
     disabled?: boolean;
@@ -20,7 +20,7 @@ export interface CheckboxToggleProps extends CheckboxProps, BorderProps, SizePro
 export declare class Checkbox extends React.Component<CheckboxProps> {
     labelColor: () => {
         color: string;
-    };
-    iconColor: () => "black30" | "white100" | "black5";
-    render(): JSX.Element;
+    }
+    iconColor: () => "black30" | "white100" | "black5"
+    render(): JSX.Element
 }

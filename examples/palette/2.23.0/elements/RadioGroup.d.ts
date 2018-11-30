@@ -1,6 +1,6 @@
-import React from "react";
-import { FlexProps } from "./Flex";
-import { RadioProps } from "./Radio";
+import React from "react"
+import { FlexProps } from "./Flex"
+import { RadioProps } from "./Radio"
 /**
  * Spec: zpl.io/bAvnwlB
  */
@@ -25,11 +25,11 @@ interface RadioGroupState {
 export declare class RadioGroup extends React.Component<RadioGroupProps, RadioGroupState> {
     state: {
         selectedOption: string;
-    };
+    }
     onSelect: ({ value }: {
         value: any;
-    }) => void;
-    renderRadioButtons(): React.ReactElement<RadioProps>[];
-    render(): JSX.Element;
+    }) => void
+    renderRadioButtons(): Array<React.ReactElement<RadioProps>>
+    render(): JSX.Element
 }
-export {};
+export {}

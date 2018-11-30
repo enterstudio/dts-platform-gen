@@ -1,5 +1,5 @@
-import { FontFamily } from "./index";
+import { FontFamily } from "./index"
 /**
  * A map of the font families and their settings
  */
-export declare const fontFamily: FontFamily;
+export declare const fontFamily: FontFamily

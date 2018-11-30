@@ -1,8 +1,8 @@
-import { css } from "styled-components";
-import { breakpoints } from "../Theme";
+import { css } from "styled-components"
+import { breakpoints } from "../Theme"
 declare type Media = {
     [S in keyof typeof breakpoints]: typeof css;
-};
+}
 /**
  * A helper to construct media query strings for responsive style targeting.
  *
@@ -17,5 +17,5 @@ declare type Media = {
  *   `}
  * `
  */
-export declare const media: Media;
-export {};
+export declare const media: Media
+export {}

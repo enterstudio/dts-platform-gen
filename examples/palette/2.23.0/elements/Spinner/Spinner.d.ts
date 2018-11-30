@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 export interface SpinnerProps {
     /** Width of the spinner */
     width?: number;
@@ -8,4 +8,4 @@ export interface SpinnerProps {
     size?: "small" | "medium" | "large";
 }
 /** Generic Spinner component */
-export declare const Spinner: import("styled-components").StyledComponentClass<React.ClassAttributes<HTMLDivElement> & React.HTMLAttributes<HTMLDivElement> & SpinnerProps, any, React.ClassAttributes<HTMLDivElement> & React.HTMLAttributes<HTMLDivElement> & SpinnerProps>;
+export declare const Spinner: import ("styled-components").StyledComponentClass<React.ClassAttributes<HTMLDivElement> & React.HTMLAttributes<HTMLDivElement> & SpinnerProps, any, React.ClassAttributes<HTMLDivElement> & React.HTMLAttributes<HTMLDivElement> & SpinnerProps>

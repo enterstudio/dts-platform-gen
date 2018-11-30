@@ -1,2 +1,2 @@
-export * from "./Check";
-export * from "./CloseIcon";
+export * from "./Check"
+export * from "./CloseIcon"

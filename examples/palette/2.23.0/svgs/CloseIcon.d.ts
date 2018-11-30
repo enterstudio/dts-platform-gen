@@ -1,10 +1,10 @@
-import React from "react";
-import { Color } from "../Theme";
+import React from "react"
+import { Color } from "../Theme"
 interface IconProps {
     fill: Color;
 }
 /**
  * A CloseIcon
  */
-export declare const CloseIcon: React.SFC<IconProps>;
-export {};
+export declare const CloseIcon: React.SFC<IconProps>
+export {}

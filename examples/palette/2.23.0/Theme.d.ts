@@ -19,7 +19,7 @@ export declare const breakpoints: {
     sm: number;
     /** Below 767 */
     xs: number;
-};
+}
 /**
  * All of the config for the Artsy theming system, based on the
  * design system from our design team:
@@ -67,7 +67,7 @@ export declare const themeProps: {
         /** Full white */
         white100: string;
     };
-    fontFamily: import("./platform/fonts").FontFamily;
+    fontFamily: import ("./platform/fonts").FontFamily;
     /** Media queries to work with in web  */
     mediaQueries: {
         xl: string;
@@ -311,22 +311,22 @@ export declare const themeProps: {
             };
         };
     };
-};
+}
 /**
  * A wrapper component for passing down the Artsy theme context
  */
-export declare const Theme: (props: any) => JSX.Element;
+export declare const Theme: (props: any) => JSX.Element
 /** All available px spacing maps */
-export declare type SpacingUnit = keyof typeof themeProps["space"];
+export declare type SpacingUnit = keyof typeof themeProps["space"]
 /** All available color keys */
-export declare type Color = keyof typeof themeProps["colors"];
+export declare type Color = keyof typeof themeProps["colors"]
 /** All available width breakpoint */
-export declare type Breakpoint = keyof typeof breakpoints;
+export declare type Breakpoint = keyof typeof breakpoints
 /** All available type sizes */
-export declare type TypeSizes = typeof themeProps.typeSizes;
+export declare type TypeSizes = typeof themeProps.typeSizes
 /** All available sizes for our sans font */
-export declare type SansSize = keyof TypeSizes["sans"] | Array<keyof TypeSizes["sans"]>;
+export declare type SansSize = keyof TypeSizes["sans"] | Array<keyof TypeSizes["sans"]>
 /** All available sizes for our serif font */
-export declare type SerifSize = keyof TypeSizes["serif"] | Array<keyof TypeSizes["serif"]>;
+export declare type SerifSize = keyof TypeSizes["serif"] | Array<keyof TypeSizes["serif"]>
 /** All available sizes for our display font */
-export declare type DisplaySize = keyof TypeSizes["display"] | Array<keyof TypeSizes["display"]>;
+export declare type DisplaySize = keyof TypeSizes["display"] | Array<keyof TypeSizes["display"]>

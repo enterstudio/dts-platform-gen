@@ -1,6 +1,6 @@
-import React, { SFC } from "react";
-import { SansSize } from "../../Theme";
-import { FlexProps } from "../Flex";
+import React, { SFC } from "react"
+import { SansSize } from "../../Theme"
+import { FlexProps } from "../Flex"
 /**
  * Spec: zpl.io/2Zg4Rdq
  */
@@ -16,5 +16,5 @@ interface MessageProps extends FlexProps {
  *
  * Spec: zpl.io/2Zg4Rdq
  */
-export declare const Message: SFC<MessageProps>;
-export {};
+export declare const Message: SFC<MessageProps>
+export {}

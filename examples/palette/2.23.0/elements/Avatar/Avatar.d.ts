@@ -1,5 +1,5 @@
-import React, { ImgHTMLAttributes, SFC } from "react";
-import { SpaceProps } from "styled-system";
+import React, { ImgHTMLAttributes, SFC } from "react"
+import { SpaceProps } from "styled-system"
 export interface AvatarProps extends ImgHTMLAttributes<any>, SpaceProps {
     /** If an image is missing, show initials instead */
     initials?: string;
@@ -7,8 +7,8 @@ export interface AvatarProps extends ImgHTMLAttributes<any>, SpaceProps {
     size?: "xs" | "sm" | "md";
 }
 /** An circular Avatar component containing an image or initials */
-export declare const Avatar: SFC<AvatarProps>;
+export declare const Avatar: SFC<AvatarProps>
 /**
  * A circular avatar image component.
  */
-export declare const AvatarImage: import("styled-components").StyledComponentClass<React.ClassAttributes<HTMLImageElement> & React.ImgHTMLAttributes<HTMLImageElement> & AvatarProps, any, React.ClassAttributes<HTMLImageElement> & React.ImgHTMLAttributes<HTMLImageElement> & AvatarProps>;
+export declare const AvatarImage: import ("styled-components").StyledComponentClass<React.ClassAttributes<HTMLImageElement> & React.ImgHTMLAttributes<HTMLImageElement> & AvatarProps, any, React.ClassAttributes<HTMLImageElement> & React.ImgHTMLAttributes<HTMLImageElement> & AvatarProps>

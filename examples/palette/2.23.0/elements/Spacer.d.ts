@@ -1,5 +1,5 @@
-import React from "react";
-import { HeightProps, SpaceProps, WidthProps } from "styled-system";
+import React from "react"
+import { HeightProps, SpaceProps, WidthProps } from "styled-system"
 export interface SpacerProps extends SpaceProps, WidthProps, HeightProps {
 }
 /**
@@ -7,4 +7,4 @@ export interface SpacerProps extends SpaceProps, WidthProps, HeightProps {
  */
 export declare const Spacer: React.SFC<SpacerProps & {
     id?: string;
-}>;
+}>

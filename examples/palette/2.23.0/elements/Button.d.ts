@@ -1,13 +1,13 @@
-import { Component, ReactNode } from "react";
-import { SansProps } from "./Typography";
-import { BorderProps, BorderRadiusProps, HeightProps, SpaceProps, TextAlignProps, WidthProps } from "styled-system";
+import { Component, ReactNode } from "react"
+import { BorderProps, BorderRadiusProps, HeightProps, SpaceProps, TextAlignProps, WidthProps } from "styled-system"
+import { SansProps } from "./Typography"
 /**
  * Spec: zpl.io/2j8Knq6
  */
 /** The size of the button */
-export declare type ButtonSize = "small" | "medium" | "large";
+export declare type ButtonSize = "small" | "medium" | "large"
 /** Different theme variations */
-export declare type ButtonVariant = "primaryBlack" | "primaryWhite" | "secondaryGray" | "secondaryOutline" | "noOutline";
+export declare type ButtonVariant = "primaryBlack" | "primaryWhite" | "secondaryGray" | "secondaryOutline" | "noOutline"
 export interface ButtonProps extends ButtonBaseProps {
     children: ReactNode;
     /** The size of the button */
@@ -40,7 +40,7 @@ export declare class Button extends Component<ButtonProps> {
                 yellow10: string;
                 white100: string;
             };
-            fontFamily: import("../platform/fonts").FontFamily;
+            fontFamily: import ("../platform/fonts").FontFamily;
             mediaQueries: {
                 xl: string;
                 lg: string;
@@ -217,14 +217,14 @@ export declare class Button extends Component<ButtonProps> {
                 };
             };
         };
-    };
+    }
     getSize(): {
         height: string;
         size: "2" | "3t";
         px: number;
-    };
-    getVariant(): import("styled-components").FlattenInterpolation<import("styled-components").ThemeProps<any>>[];
-    render(): JSX.Element;
+    }
+    getVariant(): Array<import ("styled-components").FlattenInterpolation<import ("styled-components").ThemeProps<any>>>
+    render(): JSX.Element
 }
 /** Base props that construct button */
 export interface ButtonBaseProps extends BorderProps, BorderRadiusProps, SpaceProps, TextAlignProps, WidthProps, HeightProps {
@@ -244,7 +244,7 @@ export declare class ButtonBase extends Component<ButtonBaseProps & SansProps> {
     static defaultProps: {
         border: number;
         borderRadius: number;
-    };
-    onClick: (event: any) => void;
-    render(): JSX.Element;
+    }
+    onClick: (event: any) => void
+    render(): JSX.Element
 }

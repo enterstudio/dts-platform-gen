@@ -1,7 +1,7 @@
-import { CSSProperties } from "react";
-import { DisplaySize, SansSize, SerifSize, themeProps, TypeSizes } from "../Theme";
-import { StyledComponentClass } from "styled-components";
-import { ColorProps, DisplayProps as StyledSystemDisplayProps, MaxWidthProps, SpaceProps, TextAlignProps } from "styled-system";
+import { CSSProperties } from "react"
+import { StyledComponentClass } from "styled-components"
+import { ColorProps, DisplayProps as StyledSystemDisplayProps, MaxWidthProps, SpaceProps, TextAlignProps } from "styled-system"
+import { DisplaySize, SansSize, SerifSize, themeProps, TypeSizes } from "../Theme"
 /**
  * Spec: https://www.notion.so/artsy/Typography-d1f9f6731f3d47c78003d6d016c30221
  */
@@ -26,11 +26,11 @@ export interface TextProps extends ColorProps, MaxWidthProps, SpaceProps, Styled
     ellipsizeMode?: string;
 }
 /** Base Text component for typography */
-export declare const Text: StyledComponentClass<any, any, any>;
+export declare const Text: StyledComponentClass<any, any, any>
 /**
  * The supported typefaces
  */
-export declare type FontTypes = keyof TypeSizes;
+export declare type FontTypes = keyof TypeSizes
 export interface TypeSizeKeys {
     sans: SansSize;
     serif: SerifSize;
@@ -39,11 +39,11 @@ export interface TypeSizeKeys {
 /**
  * Any valid font family
  */
-export declare type FontFamily = typeof themeProps["fontFamily"];
+export declare type FontFamily = typeof themeProps["fontFamily"]
 /**
  * Any valid font weight
  */
-export declare type FontWeights = keyof FontFamily["sans"] | keyof FontFamily["serif"] | keyof FontFamily["display"];
+export declare type FontWeights = keyof FontFamily["sans"] | keyof FontFamily["serif"] | keyof FontFamily["display"]
 /**
  * Sans
  */
@@ -66,7 +66,7 @@ export interface SansProps extends Partial<TextProps> {
  */
 export declare const Sans: StyledComponentClass<SansProps, any, Pick<SansProps, "color" | "display" | "fontFamily" | "fontSize" | "lineHeight" | "maxWidth" | "textAlign" | "verticalAlign" | "p" | "style" | "size" | "italic" | "weight" | "m" | "mt" | "mr" | "mb" | "ml" | "mx" | "my" | "pt" | "pr" | "pb" | "pl" | "px" | "py" | "bg" | "numberOfLines" | "ellipsizeMode"> & {
     theme?: any;
-}>;
+}>
 /**
  * Serif
  */
@@ -89,7 +89,7 @@ export interface SerifProps extends Partial<TextProps> {
  */
 export declare const Serif: StyledComponentClass<SerifProps, any, Pick<SerifProps, "color" | "display" | "fontFamily" | "fontSize" | "lineHeight" | "maxWidth" | "textAlign" | "verticalAlign" | "p" | "style" | "size" | "italic" | "weight" | "m" | "mt" | "mr" | "mb" | "ml" | "mx" | "my" | "pt" | "pr" | "pb" | "pl" | "px" | "py" | "bg" | "numberOfLines" | "ellipsizeMode"> & {
     theme?: any;
-}>;
+}>
 export interface DisplayProps extends Partial<TextProps> {
     size: DisplaySize;
     /**
@@ -109,4 +109,4 @@ export interface DisplayProps extends Partial<TextProps> {
  */
 export declare const Display: StyledComponentClass<DisplayProps, any, Pick<DisplayProps, "color" | "display" | "fontFamily" | "fontSize" | "lineHeight" | "maxWidth" | "textAlign" | "verticalAlign" | "p" | "style" | "size" | "weight" | "m" | "mt" | "mr" | "mb" | "ml" | "mx" | "my" | "pt" | "pr" | "pb" | "pl" | "px" | "py" | "bg" | "numberOfLines" | "ellipsizeMode"> & {
     theme?: any;
-}>;
+}>

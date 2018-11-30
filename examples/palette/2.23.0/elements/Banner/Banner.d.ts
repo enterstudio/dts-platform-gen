@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 export interface BannerProps {
     dismissable: boolean;
     message: string;
@@ -9,10 +9,10 @@ export interface BannerProps {
 export declare class Banner extends React.Component<BannerProps> {
     static defaultProps: {
         dismissable: boolean;
-    };
+    }
     state: {
         dismissed: boolean;
-    };
-    handleCloseClick: () => void;
-    render(): JSX.Element;
+    }
+    handleCloseClick: () => void
+    render(): JSX.Element
 }

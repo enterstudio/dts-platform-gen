@@ -1,4 +1,4 @@
-import React from "react";
+import React from "react"
 export interface CollapseProps {
     /** Determines whether content is expanded or collapsed */
     open: boolean;
@@ -7,7 +7,7 @@ export interface CollapseProps {
 export declare class Collapse extends React.Component<CollapseProps> {
     state: {
         mounted: boolean;
-    };
-    componentDidMount(): void;
-    render(): JSX.Element;
+    }
+    componentDidMount(): void
+    render(): JSX.Element
 }

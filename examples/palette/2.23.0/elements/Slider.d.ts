@@ -1,5 +1,5 @@
-import { StyledComponentClass } from "styled-components";
-import { BorderProps, SpaceProps } from "styled-system";
+import { StyledComponentClass } from "styled-components"
+import { BorderProps, SpaceProps } from "styled-system"
 export interface SliderProps extends BorderProps, SpaceProps {
     /**
      * Additional CSS class for the root DOM node
@@ -42,4 +42,4 @@ export interface SliderProps extends BorderProps, SpaceProps {
 /**
  * A slider component that allows to define a range of values. nin and max
  */
-export declare const Slider: StyledComponentClass<SliderProps, any>;
+export declare const Slider: StyledComponentClass<SliderProps, any>

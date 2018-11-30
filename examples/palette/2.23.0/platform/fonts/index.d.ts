@@ -1,4 +1,4 @@
-export { fontFamily } from "./fontFamily";
+export { fontFamily } from "./fontFamily"
 /**
  * Type definition for font objects
  */
@@ -11,7 +11,7 @@ export interface FontDefinition {
  * Type definition for font value properties which can either
  * be an object for complex definitions or a string for single entries.
  */
-export declare type FontValue = string | FontDefinition;
+export declare type FontValue = string | FontDefinition
 /**
  * Defines the shape of the font family
  */

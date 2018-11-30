@@ -1,7 +1,7 @@
-import React from "react";
+import React from "react"
 declare enum TipSize {
     Sm = "sm",
-    Lg = "lg"
+    Lg = "lg",
 }
 export interface TooltipProps {
     content: string;
@@ -15,7 +15,7 @@ export declare class Tooltip extends React.Component<TooltipProps> {
     static defaultProps: {
         size: TipSize;
         width: number;
-    };
+    }
     state: {
         active: boolean;
         tipPosition: {
@@ -23,17 +23,17 @@ export declare class Tooltip extends React.Component<TooltipProps> {
             center: boolean;
             right: any;
         };
-    };
-    private innerWrapper;
+    }
     computeTipPosition: () => {
         center: boolean;
         left: number;
         right: any;
-    };
-    componentDidMount(): void;
-    handleClick: () => void;
-    handleMouseOver: () => void;
-    handleMouseOut: () => void;
-    render(): JSX.Element;
+    }
+    handleClick: () => void
+    handleMouseOver: () => void
+    handleMouseOut: () => void
+    private innerWrapper
+    componentDidMount(): void
+    render(): JSX.Element
 }
-export {};
+export {}

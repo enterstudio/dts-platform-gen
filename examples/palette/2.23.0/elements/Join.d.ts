@@ -1,4 +1,4 @@
-import React, { SFC } from "react";
+import React, { SFC } from "react"
 interface JoinProps {
     separator: React.ReactElement<any>;
 }
@@ -22,5 +22,5 @@ interface JoinProps {
  * <SomeComponent/>
  * <child3/>
  */
-export declare const Join: SFC<JoinProps>;
-export {};
+export declare const Join: SFC<JoinProps>
+export {}

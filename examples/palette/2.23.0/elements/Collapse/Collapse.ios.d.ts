@@ -1,5 +1,5 @@
-import React from "react";
-import { View } from "react-native";
+import React from "react"
+import { View } from "react-native"
 export interface CollapseProps {
     /** Determines whether content is expanded or collapsed */
     open: boolean;
@@ -20,15 +20,15 @@ interface State {
 }
 /** Collapses content with animation when open is not true */
 export declare class Collapse extends React.Component<CollapseProps, State> {
-    measureRef: View;
-    state: State;
-    componentDidMount(): void;
-    handleMeasureRef: (ref: any) => void;
-    measureChildren: () => void;
-    handleLayout: (ev: any) => void;
-    handleFrame: (animatedValue: any) => void;
-    componentWillReceiveProps(nextProps: any): void;
-    measureView: () => JSX.Element;
-    render(): JSX.Element;
+    measureRef: View
+    state: State
+    handleMeasureRef: (ref: any) => void
+    measureChildren: () => void
+    handleLayout: (ev: any) => void
+    handleFrame: (animatedValue: any) => void
+    measureView: () => JSX.Element
+    componentDidMount(): void
+    componentWillReceiveProps(nextProps: any): void
+    render(): JSX.Element
 }
-export {};
+export {}
